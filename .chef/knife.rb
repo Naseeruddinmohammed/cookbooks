@@ -7,3 +7,4 @@ node_name                "naseernisum"
 client_key               "#{current_dir}/naseernisum.pem"
 chef_server_url          "https://api.chef.io/organizations/linuxnisum"
 cookbook_path            ["#{current_dir}/../cookbooks"]
+knife[:editor] = "vi"

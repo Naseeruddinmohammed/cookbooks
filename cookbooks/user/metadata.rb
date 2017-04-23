@@ -1,10 +1,7 @@
-name             'mysql1'
+name             'user'
 maintainer       'YOUR_COMPANY_NAME'
 maintainer_email 'YOUR_EMAIL'
 license          'All rights reserved'
-description      'Installs/Configures mysql1'
+description      'Installs/Configures user'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.1.6'
-
-
-depends 'mysql', '~> 8.0'
+version          '0.1.2'

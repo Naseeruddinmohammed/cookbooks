@@ -1,0 +1,77 @@
+I, [2017-04-19T13:13:01.635549 #13348]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2017-04-19T13:13:03.590596 #13348]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2017-04-19T13:13:03.743896 #13348]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'bento/ubuntu-14.04'...
+I, [2017-04-19T13:13:13.437959 #13348]  INFO -- default-ubuntu-1404: [KProgress: 10%[KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2017-04-19T13:13:13.617322 #13348]  INFO -- default-ubuntu-1404: ==> default: Checking if box 'bento/ubuntu-14.04' is up to date...
+I, [2017-04-19T13:13:14.985868 #13348]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: kitchen-user-default-ubuntu-1404_default_1492632794935_51222
+I, [2017-04-19T13:13:16.377571 #13348]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2017-04-19T13:13:16.716220 #13348]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2017-04-19T13:13:16.784055 #13348]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2017-04-19T13:13:16.784581 #13348]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2017-04-19T13:13:16.856501 #13348]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2017-04-19T13:13:16.965644 #13348]  INFO -- default-ubuntu-1404:     default: 22 (guest) => 2201 (host) (adapter 1)
+I, [2017-04-19T13:13:17.171699 #13348]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2017-04-19T13:13:17.479543 #13348]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2017-04-19T13:13:17.837109 #13348]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2201
+I, [2017-04-19T13:13:17.837277 #13348]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2017-04-19T13:13:17.837501 #13348]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2017-04-20T09:29:20.988055 #13348]  INFO -- default-ubuntu-1404:     default: 
+I, [2017-04-20T09:29:20.989105 #13348]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2017-04-20T09:29:20.989168 #13348]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2017-04-20T09:29:20.989193 #13348]  INFO -- default-ubuntu-1404:     default: 
+I, [2017-04-20T09:29:20.989248 #13348]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2017-04-20T09:29:20.989291 #13348]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if it's present...
+I, [2017-04-20T09:29:20.989881 #13348]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2017-04-20T09:29:20.990539 #13348]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2017-04-20T09:29:20.990659 #13348]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2017-04-20T09:29:20.990760 #13348]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2017-04-20T09:29:20.990810 #13348]  INFO -- default-ubuntu-1404: ==> default: Mounting shared folders...
+I, [2017-04-20T09:29:20.992152 #13348]  INFO -- default-ubuntu-1404:     default: /tmp/omnibus/cache => /Users/naseer/.kitchen/cache
+I, [2017-04-20T09:29:20.992244 #13348]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioned because `--no-provision` is specified.
+E, [2017-04-20T09:29:20.994248 #13348] ERROR -- default-ubuntu-1404: Create failed on instance <default-ubuntu-1404>.
+E, [2017-04-20T09:29:20.994513 #13348] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2017-04-20T09:29:20.994533 #13348] ERROR -- default-ubuntu-1404: Class: Errno::EIO
+E, [2017-04-20T09:29:20.994555 #13348] ERROR -- default-ubuntu-1404: Message: Input/output error @ io_write - <STDERR>
+E, [2017-04-20T09:29:20.994567 #13348] ERROR -- default-ubuntu-1404: ----------------------
+E, [2017-04-20T09:29:20.994576 #13348] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2017-04-20T09:29:20.994585 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/logger.rb:660:in `write'
+E, [2017-04-20T09:29:20.994603 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/logger.rb:660:in `warn'
+E, [2017-04-20T09:29:20.994613 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/logger.rb:660:in `rescue in write'
+E, [2017-04-20T09:29:20.994631 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/logger.rb:644:in `write'
+E, [2017-04-20T09:29:20.994641 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/logger.rb:433:in `add'
+E, [2017-04-20T09:29:20.994651 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/logger.rb:489:in `info'
+E, [2017-04-20T09:29:20.994660 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/logger.rb:391:in `info'
+E, [2017-04-20T09:29:20.994678 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/logger.rb:372:in `format_line'
+E, [2017-04-20T09:29:20.994688 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/logger.rb:349:in `<<'
+E, [2017-04-20T09:29:20.994723 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/logger.rb:104:in `public_send'
+E, [2017-04-20T09:29:20.994733 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/logger.rb:104:in `block (2 levels) in delegate_to_all_loggers'
+E, [2017-04-20T09:29:20.994743 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/logger.rb:104:in `each'
+E, [2017-04-20T09:29:20.994760 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/logger.rb:104:in `block in delegate_to_all_loggers'
+E, [2017-04-20T09:29:20.994770 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/mixlib-shellout-2.2.7/lib/mixlib/shellout/unix.rb:287:in `read_stdout_to_buffer'
+E, [2017-04-20T09:29:20.994788 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/mixlib-shellout-2.2.7/lib/mixlib/shellout/unix.rb:277:in `attempt_buffer_read'
+E, [2017-04-20T09:29:20.994798 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/mixlib-shellout-2.2.7/lib/mixlib/shellout/unix.rb:141:in `ensure in run_command'
+E, [2017-04-20T09:29:20.994817 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/mixlib-shellout-2.2.7/lib/mixlib/shellout/unix.rb:146:in `run_command'
+E, [2017-04-20T09:29:20.994835 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/mixlib-shellout-2.2.7/lib/mixlib/shellout.rb:259:in `run_command'
+E, [2017-04-20T09:29:20.994853 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/shell_out.rb:66:in `run_command'
+E, [2017-04-20T09:29:20.994870 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/kitchen-vagrant-1.1.0/lib/kitchen/driver/vagrant.rb:434:in `run_command'
+E, [2017-04-20T09:29:20.994880 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/kitchen-vagrant-1.1.0/lib/kitchen/driver/vagrant.rb:381:in `run'
+E, [2017-04-20T09:29:20.994889 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/kitchen-vagrant-1.1.0/lib/kitchen/driver/vagrant.rb:465:in `run_vagrant_up'
+E, [2017-04-20T09:29:20.994899 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/kitchen-vagrant-1.1.0/lib/kitchen/driver/vagrant.rb:105:in `create'
+E, [2017-04-20T09:29:20.994912 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-04-20T09:29:20.994931 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-04-20T09:29:20.995066 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:524:in `block in synchronize_or_call'
+E, [2017-04-20T09:29:20.995076 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:522:in `synchronize'
+E, [2017-04-20T09:29:20.995086 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:522:in `synchronize_or_call'
+E, [2017-04-20T09:29:20.995111 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-04-20T09:29:20.995122 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-04-20T09:29:20.995140 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-04-20T09:29:20.995150 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-04-20T09:29:20.995159 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-04-20T09:29:20.995176 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-04-20T09:29:20.995193 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-04-20T09:29:20.995203 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-04-20T09:29:20.995228 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-04-20T09:29:20.995239 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-04-20T09:29:20.995257 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-04-20T09:29:20.995267 #13348] ERROR -- default-ubuntu-1404: /Users/naseer/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-04-20T09:29:20.995276 #13348] ERROR -- default-ubuntu-1404: ----End Backtrace-----
